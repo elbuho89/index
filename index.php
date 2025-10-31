@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Hub de Desarrollo | EL BUHO 89 . ORG SAS</title>
+    <meta name="description" content="Repositorio oficial y código abierto de los proyectos de EL BUHO 89, incluyendo el bot Buhopapaya™ y soluciones tecnológicas.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Variables de Marca EL BUHO 89 */
+        :root {
+            --buho-dark: #1A1A1A;
+            --buho-gold: #FFC300; /* Acento Principal */
+            --buho-red: #E94560; /* Acento Secundario/Destacado */
+            --bg-color: #0d1117; /* Color oscuro similar a GitHub */
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Estilos específicos para la tarjeta de proyecto */
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: var(--buho-gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button {
+            background-color: var(--buho-gold);
+            color: var(--buho-dark);
+            font-weight: 700;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .cta-button:hover {
+            background-color: #ffda6a;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        
+        <header class="flex flex-col md:flex-row justify-between items-center pb-6 border-b border-[#30363d]">
+            <h1 class="text-3xl font-bold flex items-center mb-4 md:mb-0">
+                <i class="fab fa-github text-4xl mr-3 text-white"></i>
+                <span class="text-white">/</span>
+                <span class="text-white hover:text-gray-400"><a href="https://github.com/ELBUHO89" target="_blank">EL BUHO 89 . ORG SAS</a></span>
+            </h1>
+            <nav>
+                <a href="/" class="text-sm font-semibold hover:text-blue-500 mr-4">Web Principal</a>
+                <a href="#proyectos" class="text-sm font-semibold hover:text-blue-500 mr-4">Proyectos</a>
+                <a href="/mediakit.html" target="_blank" class="text-sm font-semibold hover:text-blue-500">Media Kit</a>
+            </nav>
+        </header>
+
+        <section class="py-16 text-center">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-white">
+                Compromiso y <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Código Abierto</span>
+            </h2>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                Transparencia total en nuestro ecosistema. Explora el código fuente de nuestras soluciones tecnológicas, incluyendo el bot **Buhopapaya™** y herramientas de soporte.
+            </p>
+            <a href="https://github.com/ELBUHO89" target="_blank" class="inline-block cta-button px-8 py-3 rounded-lg shadow-lg">
+                <i class="fab fa-github mr-2"></i> Ver Repositorios
+            </a>
+        </section>
+
+        <div class="h-px w-full bg-[#30363d] my-10"></div>
+
+        <section id="proyectos" class="py-10">
+            <h2 class="text-4xl font-bold mb-10 text-center text-white">Proyectos Clave</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="project-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot text-4xl mr-4" style="color: var(--buho-red);"></i>
+                        <h3 class="text-2xl font-semibold text-white">Buhopapaya™ Bot</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        El corazón tecnológico de nuestra comunidad. Este bot de Twitch, escrito en Python, gestiona la moderación, el soporte técnico y las interacciones de alianzas en múltiples canales. Fomenta la inclusión y la transparencia.
+                    </p>
+                    <div class="flex justify-between items-center text-sm text-gray-500">
+                        <span class="text-yellow-500"><i class="fas fa-code mr-1"></i> Python</span>
+                        <span><i class="fas fa-star mr-1"></i> (Beta Activo)</span>
+                    </div>
+                    <a href="https://github.com/ELBUHO89/" target="_blank" class="inline-block mt-4 text-white hover:text-blue-500 font-semibold">
+                        <i class="fas fa-external-link-alt mr-1"></i> Ver Código Fuente
+                    </a>
+                </div>
+
+                <div class="project-card p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-puzzle-piece text-4xl mr-4" style="color: var(--buho-gold);"></i>
+                        <h3 class="text-2xl font-semibold text-white">Juego de Memoria</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Un juego clásico de emparejamiento desarrollado para demostrar habilidades front-end puras. Usa HTML, JavaScript y la utilidad de Tailwind CSS. ¡Reta tu agilidad visual!
+                    </p>
+                    <div class="flex justify-between items-center text-sm text-gray-500">
+                        <span class="text-blue-400"><i class="fab fa-js mr-1"></i> JS, HTML & CSS</span>
+                        <span><i class="fas fa-gamepad mr-1"></i> Demo Pública</span>
+                    </div>
+                    <a href="https://github.com/elbuho89/juego-memoria-html" target="_blank" class="inline-block mt-4 text-white hover:text-blue-500 font-semibold">
+                        <i class="fas fa-external-link-alt mr-1"></i> Ver Código Fuente
+                    </a>
+                    <a href="/juego-memoria-html/" target="_blank" class="inline-block mt-4 text-white hover:text-blue-500 font-semibold">
+                        <i class="fas fa-link mr-1"></i> Jugar Ahora
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+        
+        <div class="h-px w-full bg-[#30363d] my-10"></div>
+        
+        <footer class="mt-16 pt-8 border-t border-[#30363d] text-center text-gray-500">
+            <p>EL BUHO 89 . ORG SAS Colombia Todos los derechos reservados &copy; 2025.</p>
+            <p class="text-xs mt-2">
+                <a href="https://legal.elbuho89.org" class="hover:text-white mx-2">Aviso Legal y Política de Privacidad</a> | 
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
